@@ -38,48 +38,15 @@ Built for data control and scalable AI workflows, rather than one-off conversati
 
 ## Tech Stack
 
-### Backend
-| Layer | Technology | Purpose |
-|---|---|---|
-| Runtime | Node.js 20 + TypeScript | Type-safe production API |
-| Framework | Express.js | REST API server |
-| Auth | JWT (Access + Refresh tokens) | Stateless authentication |
-| Primary DB | PostgreSQL 15 + pgvector | Relational data + vector search |
-| Document DB | MongoDB | Conversation history |
-| Cache | Redis (Upstash) | JWT blacklist, sessions |
-| File Storage | AWS S3 / MinIO | CSV file storage |
-| Validation | Zod | Runtime type validation |
-| Security | Helmet, CORS, bcryptjs | API security |
+## Tech Stack
 
-### AI / RAG Pipeline
-| Layer | Technology | Purpose |
-|---|---|---|
-| Embeddings | HuggingFace Inference API | Text → vectors (384 dims) |
-| Embedding Model | sentence-transformers/all-MiniLM-L6-v2 | Semantic understanding |
-| Vector Store | pgvector (PostgreSQL extension) | Similarity search |
-| LLM | Groq API (openai/gpt-oss-20b) | Natural language answers |
-| RAG Strategy | Custom pipeline | Context retrieval + generation |
+**Backend:** Node.js, TypeScript, Express.js, PostgreSQL + pgvector, MongoDB, Redis, AWS S3, JWT, Zod
 
-### Frontend (Mobile)
-| Layer | Technology | Purpose |
-|---|---|---|
-| Framework | Flutter (Dart) | Cross-platform mobile app |
-| State Management | Riverpod | Reactive state |
-| HTTP Client | Dio | API calls |
-| Local Storage | SharedPreferences | Token persistence |
-| File Upload | file_picker | CSV file selection |
-| UI | Google Fonts, Material 3 | Modern dark theme |
+**AI / RAG:** Hugging Face Embeddings, `all-MiniLM-L6-v2`, pgvector, Groq LLM (`gpt-oss-20b`), Custom RAG Pipeline
 
-### Infrastructure & DevOps
-| Layer | Technology | Purpose |
-|---|---|---|
-| Container | Docker + Docker Compose | Local development |
-| Registry | AWS ECR | Docker image storage |
-| Compute | AWS ECS Fargate | Serverless containers |
-| Database | AWS RDS (PostgreSQL) | Managed database |
-| Cache | Upstash Redis | Managed Redis |
-| Load Balancer | AWS ALB | Traffic distribution |
-| CI/CD | GitHub Actions | Automated deployment |
+**Mobile:** Flutter, Dart, Riverpod, Dio, SharedPreferences, Material 3
+
+**Cloud & DevOps:** Docker, AWS ECR, ECS Fargate, AWS RDS, AWS ALB, Upstash Redis, GitHub Actions
 
 ---
 
