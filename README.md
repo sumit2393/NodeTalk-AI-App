@@ -10,7 +10,6 @@ Nexora is a production-grade multi-tenant SaaS platform that enables non-technic
  <img src="docs/screenshots/login.png" alt="Nexora dashboard" width="280" />
   <img src="docs/screenshots/dashboard.png" alt="Nexora dashboard" width="280" />
   <img src="docs/screenshots/datasource.png" alt="Nexora upload flow" width="280" />
-  <img src="docs/screenshots/AiConversation.png" alt="Nexora dashboard" width="280" />
    <img src="docs/screenshots/chatscreen.png" alt="Nexora chat" width="280" />
 </div>
 
@@ -169,37 +168,6 @@ JWT Security:
 
 ---
 
-## API Endpoints
-
-```
-Auth:
-POST /api/auth/register     — Create account + organization
-POST /api/auth/login        — Login, receive JWT tokens
-POST /api/auth/refresh      — Rotate access token
-POST /api/auth/logout       — Blacklist refresh token
-
-Users:
-GET  /api/users/me          — Get profile
-PUT  /api/users/me          — Update profile
-
-Organization:
-GET  /api/org               — Org details + members
-POST /api/org/invite        — Invite team member (OWNER/ADMIN only)
-
-Data Sources:
-POST /api/datasources/upload — Upload CSV file
-GET  /api/datasources        — List all datasources
-
-AI:
-POST /api/ai/conversations       — Start new conversation
-POST /api/ai/embed/:datasourceId — Embed CSV into vector store
-POST /api/ai/chat                — Ask AI (RAG query)
-GET  /api/ai/conversations       — List conversations
-GET  /api/ai/conversations/:id/messages — Chat history
-```
-
----
-
 ## Local Setup
 
 ```bash
@@ -234,35 +202,11 @@ npm run dev
 ```env
 NODE_ENV=development
 PORT=3000
-
-# PostgreSQL
-POSTGRES_HOST=localhost
-POSTGRES_PORT=5432
-POSTGRES_DB=nexora
-POSTGRES_USER=your_user
-POSTGRES_PASSWORD=your_password
-
-# MongoDB
+PostgreSQL= your secret keys
 MONGO_URI=localhost
-
-# Redis
-REDIS_HOST=your_upstash_host
-REDIS_PORT=6379
-REDIS_PASSWORD=your_upstash_password
-
-# JWT
-JWT_ACCESS_SECRET=your_secret
-JWT_REFRESH_SECRET=your_secret
-JWT_ACCESS_EXPIRES_IN=15m
-JWT_REFRESH_EXPIRES_IN=7d
-
-# AWS / MinIO
-AWS_ACCESS_KEY_ID=your_key
-AWS_SECRET_ACCESS_KEY=your_secret
-AWS_REGION=ap-south-1
-AWS_S3_BUCKET=nexora-uploads
-AWS_ENDPOINT=http://localhost:9000  # Remove for production
-
+Redis=your key
+JWT=your secret
+AWS / MinIO= your keys
 # AI
 GROQ_API_KEY=your_groq_key
 HUGGINGFACE_API_KEY=your_hf_key
