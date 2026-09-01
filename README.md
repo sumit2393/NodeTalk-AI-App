@@ -28,17 +28,11 @@ Nexora is a production-grade multi-tenant SaaS platform that enables non-technic
 
 ---
 
-## Why Nexora over ChatGPT?
+## Why Nexora?
 
-| Feature | ChatGPT | Nexora |
-|---|---|---|
-| Upload CSV | ✅ (loses after session) | ✅ Permanent storage |
-| Large files (10k+ rows) | ❌ Context limit | ✅ Vector search |
-| Team collaboration | ❌ | ✅ Multi-tenant |
-| Data privacy | ❌ Sent to OpenAI | ✅ Your server |
-| Role-based access | ❌ | ✅ OWNER/ADMIN/MEMBER |
-| Conversation history | ❌ | ✅ Persistent |
-| API integration | ❌ | ✅ REST API |
+Persistent AI workspace for teams — large-file processing, vector search, multi-tenant collaboration, RBAC, persistent conversations, and API integration.
+
+Built for data control and scalable AI workflows, rather than one-off conversational sessions.
 
 ---
 
