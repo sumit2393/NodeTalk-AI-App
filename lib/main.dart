@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:nexora_app/features/auth/screens/login_screen.dart';
-import 'package:nexora_app/features/dashboard/screens/dashboard_screen.dart';
+import 'package:node_talk_app/features/auth/screens/login_screen.dart';
+import 'package:node_talk_app/features/dashboard/screens/dashboard_screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'NodeTalk',
       theme: ThemeData(
         // This is the theme of your application.
         //

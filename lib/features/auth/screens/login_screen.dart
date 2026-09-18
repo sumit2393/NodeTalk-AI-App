@@ -53,7 +53,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             children: [
               // Logo
               Text(
-                'Nexora',
+                'NodeTalk',
                 style: GoogleFonts.poppins(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,

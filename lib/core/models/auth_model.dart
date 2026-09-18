@@ -1,4 +1,4 @@
-import 'package:nexora_app/core/models/user_model.dart';
+import 'package:node_talk_app/core/models/user_model.dart';
 
 class AuthModel {
   final String accessToken;

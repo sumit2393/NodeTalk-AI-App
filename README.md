@@ -1,16 +1,16 @@
-# Nexora — AI-Powered Data Intelligence Platform
+# NodeTalk — AI-Powered Data Intelligence Platform
 
 > Upload your business data. Ask anything in plain language. Get instant AI-powered insights.
 
-Nexora is a production-grade multi-tenant SaaS platform that enables non-technical teams to interact with their CSV data using natural language — powered by a custom RAG (Retrieval Augmented Generation) pipeline.
+NodeTalk is a production-grade multi-tenant SaaS platform that enables non-technical teams to interact with their CSV data using natural language — powered by a custom RAG (Retrieval Augmented Generation) pipeline.
 
 ## Screenshots
 
 <div align="center">
- <img src="docs/screenshots/login.png" alt="Nexora dashboard" width="280" />
-  <img src="docs/screenshots/dashboard.png" alt="Nexora dashboard" width="280" />
-  <img src="docs/screenshots/datasource.png" alt="Nexora upload flow" width="280" />
-   <img src="docs/screenshots/chatscreen.png" alt="Nexora chat" width="280" />
+ <img src="docs/screenshots/login.png" alt="NodeTalk dashboard" width="280" />
+  <img src="docs/screenshots/dashboard.png" alt="NodeTalk dashboard" width="280" />
+  <img src="docs/screenshots/datasource.png" alt="NodeTalk upload flow" width="280" />
+   <img src="docs/screenshots/chatscreen.png" alt="NodeTalk chat" width="280" />
 </div>
 
 ---
@@ -18,7 +18,7 @@ Nexora is a production-grade multi-tenant SaaS platform that enables non-technic
 ## User Stories
 
 **As a Marketing Manager:**
-> "I uploaded last quarter's sales CSV and asked *'Which product had the highest revenue in February?'* — Nexora answered instantly with exact numbers. No SQL, no waiting for analysts."
+> "I uploaded last quarter's sales CSV and asked *'Which product had the highest revenue in February?'* — NodeTalk answered instantly with exact numbers. No SQL, no waiting for analysts."
 
 **As an Operations Head:**
 > "I asked *'Which city had the most delayed deliveries?'* — the AI analyzed my logistics data and gave me a ranked list in seconds."
@@ -28,7 +28,7 @@ Nexora is a production-grade multi-tenant SaaS platform that enables non-technic
 
 ---
 
-## Why Nexora?
+## Why NodeTalk?
 
 Persistent AI workspace for teams — large-file processing, vector search, multi-tenant collaboration, RBAC, persistent conversations, and API integration.
 
@@ -133,8 +133,8 @@ JWT Security:
 
 ```bash
 # Clone
-git clone https://github.com/sumit2393/Nexora.git
-cd Nexora
+git clone https://github.com/sumit2393/NodeTalk.git
+cd NodeTalk
 
 # Start Docker services
 docker compose -f infra/docker-compose.yml up -d

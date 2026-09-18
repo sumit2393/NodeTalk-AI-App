@@ -1,4 +1,4 @@
-package com.nexora.nexora_app
+package com.nodetalk.node_talk_app
 
 import io.flutter.embedding.android.FlutterActivity
 
